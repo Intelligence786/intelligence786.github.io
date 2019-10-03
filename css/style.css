@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Raleway', sans-serif;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  position: fixed;
+  right: 15px;
+  background: #fff;
+}
+
+.active {
+  fill: red;
+}
+
+.zone-select {
+  width: 230px;
+  height: 75px;
+  position: absolute;
+  z-index: 102;
+  background-size: cover;
+  box-shadow: 1px 11px 38px #000;
+  padding-right: 20px;
+  background-position: center;
+  cursor: pointer;
+}
+
+.zone-select__1 {
+  left: 20px;
+  top: 120px;
+  background-image: url("../img/bars.png");
+  background-size: cover;
+  display: block;
+}
+
+.zone-select__3 {
+  left: 20px;
+  top: 120px;
+  background-image: url("../img/bars_world.png");
+  background-size: cover;
+  display: none;
+}
+
+.zone-select__2 {
+  background-image: url("../img/ohr_zones.png");
+  top: 220px;
+  left: 20px;
+  background-size: cover;
+  display: block;
+}
+
+.info-box {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  width: 50%;
+  box-sizing: border-box;
+  height: 100vh;
+  background-position: center;
+  padding: 15px 10px;
+  z-index: 101;
+  background: rgba(85, 85, 85, 0.9);
+  box-shadow: 1px 16px 86px #000;
+  color: #fff;
+}
+
+.info-box__title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-box__title .img-block {
+  margin-bottom: 10px;
+}
+
+.info-box__title .img-block img {
+  width: 100%;
+}
+
+.info-box__description {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.info-box .info-box-pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.info-box .info-box-pagination .arrow {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  bottom: 10px;
+}
+
+.info-box .info-box-pagination .arrow img {
+  width: 70px;
+}
+
+.info-box .info-box-pagination .arrow-prev {
+  left: 10px;
+}
+
+.info-box .info-box-pagination .arrow-next {
+  right: 10px;
+}
+
+.info-box img {
+  width: 100%;
+}
+
+.info-box .close-box {
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 102;
+}
+
+.info-box .close-box img {
+  width: 40px;
+}
+
+.bars-legal {
+  padding: 20px 30px;
+  width: 80%;
+}
+
+#bars-country {
+  padding: 20px 30px;
+  width: 80%;
+}
+
+.bars-info {
+  padding: 20px 30px;
+  text-align: center;
+  width: 80%;
+}
+
+.bars-info img {
+  max-width: 100%;
+}
+
+.area-box {
+  max-width: 50%;
+}
+
+.area-box .img-block {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.area-box img {
+  width: 100%;
+}
+
+.info-panel {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  color: #000;
+  display: none;
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1000000000;
+}
+
+.info-panel__title {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0 10px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-panel__description {
+  padding: 0 10px;
+}
+
+.info-panel .img-block {
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.info-panel .img-block img {
+  max-width: 100%;
+}
+
+.fil21 {
+  transition: .1s ease;
+  cursor: pointer;
+}
+
+.fil21:hover {
+  fill: #349ab3;
+}
+
+.fil20 {
+  transition: .1s ease;
+  cursor: pointer;
+}
+
+.fil20:hover {
+  fill: #349ab3;
+}
+
+.fil26 {
+  cursor: pointer;
+}
+
+.fil27 {
+  transition: .1s ease;
+  cursor: pointer;
+}
+
+.fil27:hover {
+  fill: #d69e1b;
+}
+
+.fancybox-slide {
+  padding: 0;
+}
+
+.user-select-none {
+  user-select: none;
+}
+
+svg {
+  cursor: grab;
+}
+
+.dragging {
+  cursor: grabbing;
+}
+
+.area-kyrgyzstan {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+}
+
+.area-kyrgyzstan .full-block {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 104;
+  cursor: pointer;
+}
+
+.area-kyrgyzstan .full-block__title {
+  margin-bottom: 10px;
+}
+
+.area-kyrgyzstan .full-block a {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #000;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #00ADB6;
+}
+
+.area-kyrgyzstan .full-block a img {
+  width: 80px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+
+.area-kyrgyzstan .full-block .world-map {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.area-kyrgyzstan .full-block img {
+  width: 80px;
+}
+
+.video {
+  width: 150px;
+  height: 100px;
+  cursor: pointer;
+  background: url("https://www.astromeridian.ru/assets/images/sonnik/bars.jpg");
+  background-size: cover;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 100;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video img {
+  width: 36px;
+}
+
+svg {
+  position: absolute;
+}
+
+.info-area {
+  padding: 10px 20px;
+  position: absolute;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  background: rgba(241, 204, 116, 0.8);
+}
+
+.info-area ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.info-area ul li {
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.info-area ul .color {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: -6px;
+  margin-right: 5px;
+}
+
+.info-area ul .color--orange {
+  background: #FFB300;
+}
+
+.info-area ul .color--blue {
+  background: #00CCFF;
+}
+
+@media screen and (min-width: 1900px) {
+  .info-box__title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .info-box__description {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+}
